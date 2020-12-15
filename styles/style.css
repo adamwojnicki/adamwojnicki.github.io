@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;600&display=swap");
+:root {
+  font-size: 10px;
+  --dark: #232323;
+  --light: #fafafa;
+  --heading: "Poppins", Arial, Helvetica, sans-serif;
+  --copy: "Lato", Arial, Helvetica, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--copy);
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: var(--dark) url(../img/hero_bground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--light);
+}
+.hero__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+}
+.hero__headline {
+  font-size: 6.4rem;
+  margin-bottom: 3.2rem;
+  font-family: var(--heading);
+}
+.hero__desc {
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+.hero__social {
+  font-size: 4.2rem;
+}
+.hero__social a {
+  color: var(--light);
+  display: inline-block;
+  margin: 0 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 8px;
+  }
+}
