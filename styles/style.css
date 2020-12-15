@@ -6,12 +6,20 @@
   --heading: "Poppins", Arial, Helvetica, sans-serif;
   --copy: "Lato", Arial, Helvetica, sans-serif;
 }
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 8px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 body {
   font-family: var(--copy);
+  color: var(--dark);
+  background: var(--light);
 }
 .hero {
   width: 100%;
@@ -49,8 +57,36 @@ body {
   margin: 0 1.2rem;
 }
 
-@media screen and (max-width: 768px) {
-  :root {
-    font-size: 8px;
-  }
+.half-text {
+  max-width: 1440px;
+  width: 90%;
+  margin: 24px auto;
+}
+.half-text__img {
+  width: 40%;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.half-text__img img {
+  width: 100%;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.text-content {
+  width: 40%;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text-content__headline {
+  font-size: 4.2rem;
+  margin-bottom: 32px;
+  font-family: var(--heading);
+}
+.text-content__desc {
+  font-size: 1.8rem;
 }
