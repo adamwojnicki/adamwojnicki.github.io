@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;600&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   font-size: 10px;
   --dark: #232323;
@@ -6,12 +10,20 @@
   --heading: "Poppins", Arial, Helvetica, sans-serif;
   --copy: "Lato", Arial, Helvetica, sans-serif;
 }
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 8px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 body {
   font-family: var(--copy);
+  color: var(--dark);
+  background: var(--light);
 }
 .hero {
   width: 100%;
@@ -48,9 +60,71 @@ body {
   display: inline-block;
   margin: 0 1.2rem;
 }
+.arr-down {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: var(--light);
+  font-size: 4.8rem;
+  animation: arr-bounce 3s infinite;
+}
 
-@media screen and (max-width: 768px) {
-  :root {
-    font-size: 8px;
+@keyframes arr-bounce {
+  0% {
+    transform: translate(-50%, 0);
   }
+  50% {
+    transform: translate(-50%, 16px);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+
+.half-text {
+  max-width: 1440px;
+  width: 90%;
+  margin: 24px auto;
+}
+.half-text#about {
+  height: 70vh;
+}
+.half-text__img {
+  width: 40%;
+  border-radius: 24px;
+  overflow: hidden;
+}
+@media screen and (max-width: 866px) {
+  .half-text__img {
+    width: 50%;
+  }
+}
+.half-text__img img {
+  width: 100%;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.text-content {
+  width: 40%;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 569px) {
+  .text-content {
+    width: 80%;
+  }
+}
+.text-content__headline {
+  font-size: 4.2rem;
+  margin-bottom: 32px;
+  font-family: var(--heading);
+}
+.text-content__desc {
+  font-size: 1.8rem;
 }
