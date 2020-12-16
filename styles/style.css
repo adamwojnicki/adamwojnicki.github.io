@@ -87,10 +87,18 @@ body {
   width: 90%;
   margin: 24px auto;
 }
+.half-text#about {
+  height: 70vh;
+}
 .half-text__img {
   width: 40%;
   border-radius: 24px;
   overflow: hidden;
+}
+@media screen and (max-width: 866px) {
+  .half-text__img {
+    width: 50%;
+  }
 }
 .half-text__img img {
   width: 100%;
@@ -106,6 +114,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (max-width: 569px) {
+  .text-content {
+    width: 80%;
+  }
 }
 .text-content__headline {
   font-size: 4.2rem;
