@@ -176,7 +176,18 @@ body {
   text-decoration: none;
   background: #cacaca;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 .project-card__ctas a:first-child {
   margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 478px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
