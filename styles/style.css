@@ -166,8 +166,6 @@ body {
   font-size: 1.7rem;
   margin-bottom: 16px;
 }
-.project-card__ctas {
-}
 .project-card__ctas a {
   display: inline-block;
   padding: 1rem 3rem;
@@ -181,13 +179,22 @@ body {
 .project-card__ctas a:first-child {
   margin-right: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (max-width: 478px) {
+@media screen and (max-width: 678px) {
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+.footer {
+  width: 100%;
+  border-top: 1px solid #cacaca;
+}
+.footer__text {
+  padding: 24px;
+  font-size: 1.8rem;
+  text-align: center;
 }
