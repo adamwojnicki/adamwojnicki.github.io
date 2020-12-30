@@ -26,6 +26,13 @@ body {
   color: var(--dark);
   background: var(--light);
 }
+section {
+  padding: 64px 0;
+}
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
 /* HERO */
 .hero {
   width: 100%;
@@ -87,7 +94,7 @@ body {
 .half-text {
   max-width: 1440px;
   width: 90%;
-  margin: 24px auto;
+  margin: auto;
 }
 .half-text#about {
   height: 70vh;
@@ -188,6 +195,20 @@ body {
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+.contact-icons {
+  margin-top: 32px;
+  font-size: 4rem;
+}
+.contact-icons a,
+.hero__social a,
+.project-card__ctas a {
+  transition: opacity 0.4s ease-in-out;
+}
+.contact-icons a:hover,
+.hero__social a:hover,
+.project-card__ctas a:hover {
+  opacity: 0.8;
 }
 .footer {
   width: 100%;
