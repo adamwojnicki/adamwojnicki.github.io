@@ -64,6 +64,7 @@ a {
     height: 100vh;
     background: rgba(0, 0, 0, 0.95);
     right: -100%;
+    transition: right 0.4s ease-in-out;
   }
   .navigation.active {
     right: 0;
@@ -83,6 +84,7 @@ a {
     right: 25px;
     z-index: 20;
     color: var(--light);
+    filter: invert(0.45);
     background: transparent;
     border: none;
     font-size: 3.2rem;
