@@ -56,6 +56,39 @@ a {
 .nav-menu__item a {
   color: var(--light);
 }
+.nav-menu-toggle {
+  display: none;
+}
+@media screen and (max-width: 575px) {
+  .navigation {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    right: -100%;
+  }
+  .navigation.active {
+    right: 0;
+  }
+  .nav-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .nav-menu-toggle {
+    display: block;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 20;
+    color: var(--light);
+    background: transparent;
+    border: none;
+    font-size: 3.2rem;
+    outline: none;
+  }
+}
 /* HERO */
 .hero {
   width: 100%;
