@@ -33,6 +33,29 @@ a {
   color: var(--dark);
   text-decoration: none;
 }
+/* NAVBAR */
+.navigation {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.65);
+}
+.nav-menu {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.nav-menu__item {
+  list-style-type: none;
+  font-size: 2.4rem;
+  margin: 16px 32px;
+}
+.nav-menu__item a {
+  color: var(--light);
+}
 /* HERO */
 .hero {
   width: 100%;
